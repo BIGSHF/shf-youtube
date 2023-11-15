@@ -6,10 +6,9 @@ const Videos = ({ videos, direction }) => {
 
   return (
     <Stack
-      direction={direction || 'row'}
+      direction={direction || { sx: 'column', sm: 'row' }}
       flexWrap='wrap'
       justifyContent='start'
-      alignContent='start'
       gap={2}
     >
       {videos.map((item, idx) => (
